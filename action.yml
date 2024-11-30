@@ -1,0 +1,34 @@
+name: "FTP Deploy"
+description: "Deploy files or directories to an FTP server"
+author: "Your Name"
+inputs:
+  host:
+    description: "FTP server hostname"
+    required: true
+  user:
+    description: "FTP username"
+    required: true
+  password:
+    description: "FTP password"
+    required: true
+    secret: true
+  secure:
+    description: "Use secure connection (true/false)"
+    required: false
+    default: "false"
+  local_path:
+    description: "Local file or directory to upload"
+    required: true
+  remote_path:
+    description: "Remote file or directory path"
+    required: true
+  is_directory:
+    description: "Indicate if the local path is a directory"
+    required: false
+    default: "false"
+runs:
+  using: "node16"
+  main: "index.js"
+branding:
+  icon: "upload-cloud"
+  color: "blue"
