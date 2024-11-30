@@ -1,5 +1,5 @@
 {
-    "name": "ftp-deploy-action",
+    "name": "ftp-deploy",
     "version": "1.0.0",
     "description": "A GitHub Action to deploy files or directories to an FTP server",
     "main": "index.js",
@@ -16,7 +16,7 @@
       "jest": "^29.0.0"
     },
     "keywords": ["ftp", "deploy", "github-action"],
-    "author": "Your Name",
+    "author": "Ukendiran",
     "license": "MIT"
   }
   

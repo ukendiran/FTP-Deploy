@@ -1,15 +1,15 @@
 name: "FTP Deploy"
 description: "Deploy files or directories to an FTP server"
-author: "Your Name"
+author: "Ukendiran"
 inputs:
   host:
-    description: "FTP server hostname"
+    description: "FTP Server"
     required: true
   user:
-    description: "FTP username"
+    description: "FTP Username"
     required: true
   password:
-    description: "FTP password"
+    description: "FTP Password"
     required: true
     secret: true
   secure:
